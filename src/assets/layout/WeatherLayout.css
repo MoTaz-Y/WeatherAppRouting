@@ -1,0 +1,9 @@
+.weather-layout {
+  display: flex;
+  text-align: center;
+  padding: 20px;
+}
+
+.weather-layout h1 {
+  margin: 0;
+}
