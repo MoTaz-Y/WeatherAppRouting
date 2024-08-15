@@ -10,7 +10,9 @@ const routes = createRoutesFromElements(
   <>
     <Route path="/" element={<RootLayout />}>
       <Route index element={<div>Home</div>} />
-      <Route path="weather" element={<WeatherLayout />} />
+      <Route path="weather" element={<WeatherLayout />}>
+        <Route path=":city" element={<div>Weather of city</div>} />
+      </Route>
     </Route>
   </>
 );
